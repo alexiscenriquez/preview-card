@@ -12,6 +12,7 @@ body{
 }
 #wrapper{
     margin:auto;
+    display: flex;
     
    
     
@@ -26,7 +27,7 @@ body{
 #div1{
     background-color: var(--orange);
     color:white;
-    border-radius: 10px 10px 0 0;
+   
   
     justify-content: space-around;
 }
@@ -69,19 +70,20 @@ p{
     color:var(--vDarkCyan);
 }
 
-@media(max-width:376px){
+@media(max-width:769px){
     #wrapper{
 display: flex;
 flex-direction: column;
-width:85vw;
+max-width:400px;
 margin-top:60px;
 margin-bottom: 100px;
 }
 #div1{
-    display: flex;
+  display: flex;
     padding:40px;
     flex-direction: column;
     height:400px;
+    border-radius: 10px 10px 0 0;
 }
 #div2{
     display: flex;
@@ -95,6 +97,45 @@ margin-bottom: 100px;
     padding:40px;
     height:400px;
 }
- 
-   
+
 }
+ @media(min-width:769px){
+     #wrapper{
+         flex-direction: row;
+         align-items: center;
+        width:70%;
+        height: 100vh;
+        justify-content: center;
+
+     }
+     #div1{
+        display: flex;
+        flex-direction: column;
+         width:45vw;
+         height:60vh;
+         padding:50px;
+         justify-content: space-around;
+         border-radius: 10px 0 0 10px;
+     }
+     #div2{
+        display: flex;
+        flex-direction: column;
+         width:45vw;
+         height:60vh;
+         padding:50px;
+         justify-content: space-around;
+    }
+    #div3{
+        display: flex;
+        flex-direction: column;
+         width:45vw;
+         height:60vh;
+         padding:50px;
+         justify-content: space-around;
+         border-radius: 0 10px 10px 0;
+    }
+    p{
+       
+    }
+ }
+   
