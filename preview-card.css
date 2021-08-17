@@ -26,20 +26,20 @@ body{
 }
 #div1{
     background-color: var(--orange);
-    color:white;
+    color:var(--vLightGray);
    
   
     justify-content: space-around;
 }
 #div2{
     background-color: var(--darkCyan);
-    color:white; 
+    color:var(--vLightGray);
     
     justify-content: space-around;
 }
 #div3{
     background-color: var(--vDarkCyan);
-    color:white; 
+    color:var(--vLightGray);
     border-radius: 0 0 10px 10px;
     justify-content: space-around;
 }
@@ -70,6 +70,32 @@ p{
     color:var(--vDarkCyan);
 }
 
+#div1 .lrn-more:hover{
+border: solid 2px var(--tWhite);
+color:var(--tWhite);
+background-color: transparent;
+transition-duration: 0.1s;
+transition-property: background-color;
+}
+
+#div2 .lrn-more:hover{
+    border: solid 2px var(--tWhite);
+color:var(--tWhite);
+background-color: transparent;
+background-color: transparent;
+transition-duration: 0.1s;
+transition-property: background-color;
+}
+
+
+#div3 .lrn-more:hover{
+    border: solid 2px var(--tWhite);
+color:var(--tWhite);
+background-color: transparent;
+background-color: transparent;
+transition-duration: 0.1s;
+transition-property: background-color;
+}
 @media(max-width:769px){
     #wrapper{
 display: flex;
@@ -134,8 +160,6 @@ margin-bottom: 100px;
          justify-content: space-around;
          border-radius: 0 10px 10px 0;
     }
-    p{
-       
-    }
+ 
  }
    
